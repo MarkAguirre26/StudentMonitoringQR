@@ -1,0 +1,248 @@
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\Blotter.exe.config
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\Blotter.exe.manifest
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\Blotter.application
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\Blotter.exe
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\Blotter.pdb
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\EntityFramework.dll
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\Sms.dll
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\Camera_NET.pdb
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\DirectShowLib-2010.pdb
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\EntityFramework.xml
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.frm_BrgyClearance.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.frm_camera.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.frm_fingerPrint.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.frm_login.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.frm_SelecDate.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.frm_server.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.frm_user.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.Main.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.Properties.Resources.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.Public.CameraControl.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\StudentMonitoring.csproj.GenerateResource.Cache
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.exe.manifest
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.application
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.exe
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.pdb
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\StudentMonitoring.csprojResolveAssemblyReference.cache
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\bin\Debug\Bunifu_UI_v1.4.dll
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\Blotter\obj\Debug\Blotter.FrmDTR.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\AppSystem.exe.config
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\AppSystem.exe.manifest
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\AppSystem.application
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\AppSystem.exe
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\AppSystem.pdb
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\Bunifu_UI_v1.4.dll
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\EntityFramework.dll
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\Sms.dll
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\bin\Debug\EntityFramework.xml
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\StudentMonitoring.csprojResolveAssemblyReference.cache
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.Report.FrmReport.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.FrmDTR.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.frm_BrgyClearance.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.frm_camera.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.frm_fingerPrint.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.frm_login.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.frm_SelecDate.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.frm_server.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.frm_user.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.Main.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.Properties.Resources.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.Public.CameraControl.resources
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\StudentMonitoring.csproj.GenerateResource.Cache
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.exe.manifest
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.application
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.exe
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.pdb
+E:\DeveloperProjects\2019\StudentAttendanceMonitoring\Blotter\obj\Debug\AppSystem.FrmRequest.resources
+E:\DeveloperProjects\2019\StudentMonitoringWinform\Blotter\bin\Debug\AppSystem.exe.config
+E:\DeveloperProjects\2019\StudentMonitoringWinform\Blotter\obj\Debug\AppSystem.exe
+E:\DeveloperProjects\2019\StudentMonitoringWinform\Blotter\obj\Debug\AppSystem.pdb
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.config
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.manifest
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AppSystem.application
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AppSystem.pdb
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\Bunifu_UI_v1.4.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\EntityFramework.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\Sms.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\EntityFramework.xml
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csprojResolveAssemblyReference.cache
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmRequest.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.Report.FrmReport.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmDTR.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_BrgyClearance.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_camera.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_fingerPrint.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_login.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_SelecDate.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_server.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_user.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.Main.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.Properties.Resources.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.Public.CameraControl.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csproj.GenerateResource.Cache
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe.manifest
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.application
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.pdb
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Barcode.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Core.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.MMS.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Pdu.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.QRCode.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.UI.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Wap.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_qrEncode.resources
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AForge.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AForge.Video.DirectShow.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AForge.Video.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AForge.xml
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AForge.Video.xml
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\AForge.Video.DirectShow.xml
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\zxing.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.dll
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\zxing.pdb
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\zxing.xml
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.pdb
+E:\DeveloperProjects\2019\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.xml
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.config
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.pdb
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.manifest
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AppSystem.application
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AppSystem.pdb
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AForge.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AForge.Video.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\EntityFramework.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Barcode.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Core.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.MMS.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Pdu.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.UI.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Wap.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\Sms.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\zxing.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.dll
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AForge.xml
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AForge.Video.xml
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\EntityFramework.xml
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\zxing.pdb
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\zxing.xml
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.pdb
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.xml
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmRequest.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_qrEncode.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.Report.FrmReport.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmDTR.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_BrgyClearance.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_camera.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_fingerPrint.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_login.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_SelecDate.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_server.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_user.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.Main.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.Properties.Resources.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.Public.CameraControl.resources
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csproj.GenerateResource.Cache
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe.manifest
+C:\Users\Mark\Desktop\StudentMonitoring\Blotter\obj\Debug\AppSystem.application
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.config
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.manifest
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AppSystem.application
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AppSystem.pdb
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AForge.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AForge.Video.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\EntityFramework.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Barcode.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Core.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.MMS.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Pdu.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.UI.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Wap.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\Sms.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\zxing.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.dll
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AForge.xml
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AForge.Video.xml
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\EntityFramework.xml
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\zxing.pdb
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\zxing.xml
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.pdb
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.xml
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csprojResolveAssemblyReference.cache
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmRequest.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_qrEncode.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.Report.FrmReport.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmDTR.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_BrgyClearance.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_camera.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_fingerPrint.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_login.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_SelecDate.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_server.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_user.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.Main.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.Properties.Resources.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.Public.CameraControl.resources
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csproj.GenerateResource.Cache
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe.manifest
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.application
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe
+C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.pdb
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.config
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.manifest
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AppSystem.application
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AppSystem.pdb
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AForge.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AForge.Video.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\EntityFramework.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Barcode.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Core.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.MMS.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Pdu.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.UI.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\MessagingToolkit.Wap.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\Sms.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.dll
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AForge.xml
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AForge.Video.xml
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\EntityFramework.xml
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.pdb
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.xml
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.pdb
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.xml
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmRequest.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_qrEncode.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Report.FrmReport.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmDTR.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_BrgyClearance.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_camera.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_fingerPrint.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_login.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_SelecDate.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_server.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_user.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Main.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Properties.Resources.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Public.CameraControl.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csproj.GenerateResource.Cache
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe.manifest
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.application
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.pdb
