@@ -92,7 +92,7 @@
             this.txtStrand = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
-            this.txtSection = new System.Windows.Forms.TextBox();
+            this.txtSectionOther = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cboSection = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -188,7 +188,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(490, 496);
+            this.tabPage3.Size = new System.Drawing.Size(493, 450);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -770,7 +770,7 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.label25);
-            this.panel5.Controls.Add(this.txtSection);
+            this.panel5.Controls.Add(this.txtSectionOther);
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.cboSection);
             this.panel5.Location = new System.Drawing.Point(3, 288);
@@ -787,13 +787,13 @@
             this.label25.TabIndex = 20;
             this.label25.Text = "Other";
             // 
-            // txtSection
+            // txtSectionOther
             // 
-            this.txtSection.Enabled = false;
-            this.txtSection.Location = new System.Drawing.Point(145, 16);
-            this.txtSection.Name = "txtSection";
-            this.txtSection.Size = new System.Drawing.Size(138, 20);
-            this.txtSection.TabIndex = 19;
+            this.txtSectionOther.Enabled = false;
+            this.txtSectionOther.Location = new System.Drawing.Point(145, 16);
+            this.txtSectionOther.Name = "txtSectionOther";
+            this.txtSectionOther.Size = new System.Drawing.Size(138, 20);
+            this.txtSectionOther.TabIndex = 19;
             // 
             // label14
             // 
@@ -1034,7 +1034,7 @@
         private System.Windows.Forms.TextBox txtGradeOther;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox txtSection;
+        private System.Windows.Forms.TextBox txtSectionOther;
         private System.Windows.Forms.ComboBox cboCourse;
         private System.Windows.Forms.Label label26;
     }

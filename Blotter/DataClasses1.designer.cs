@@ -181,13 +181,6 @@ namespace AppSystem
 			return ((ISingleResult<getRequestResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AccountSelectByID")]
-		public ISingleResult<AccountSelectByIDResult> AccountSelectByID([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RecID", DbType="VarChar(50)")] string recID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), recID);
-			return ((ISingleResult<AccountSelectByIDResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_AccountSELECT")]
 		public ISingleResult<sp_AccountSELECTResult> sp_AccountSELECT([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="VarChar(MAX)")] string iD)
 		{
@@ -237,36 +230,6 @@ namespace AppSystem
 			return ((ISingleResult<sp_COURSEResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_InsertUser")]
-		public int sp_InsertUser(
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Firstname", DbType="VarChar(100)")] string firstname, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Middlename", DbType="VarChar(100)")] string middlename, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Lastname", DbType="VarChar(100)")] string lastname, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(100)")] string email, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Level_cn", DbType="VarChar(100)")] string level_cn, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Username", DbType="VarChar(100)")] string username, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Password", DbType="VarChar(100)")] string password, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarBinary(MAX)")] System.Data.Linq.Binary biometrics, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="RFID", DbType="VarChar(100)")] string rFID, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AVATAR", DbType="VarBinary(MAX)")] System.Data.Linq.Binary aVATAR, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="LRN", DbType="VarChar(100)")] string lRN, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Grade", DbType="VarChar(100)")] string grade, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SECTION_", DbType="VarChar(100)")] string sECTION_, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Status", DbType="VarChar(100)")] string status, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Remarks", DbType="VarChar(100)")] string remarks, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PhoneNo", DbType="VarChar(100)")] string phoneNo, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="BirthDate", DbType="VarChar(100)")] string birthDate, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Strand", DbType="VarChar(100)")] string strand, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolYear", DbType="VarChar(100)")] string schoolYear, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="GuardianName", DbType="VarChar(100)")] string guardianName, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Schedule", DbType="VarChar(100)")] string schedule, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Adviser", DbType="VarChar(100)")] string adviser, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Course", DbType="VarChar(100)")] string course)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstname, middlename, lastname, email, level_cn, username, password, biometrics, rFID, aVATAR, lRN, grade, sECTION_, status, remarks, phoneNo, birthDate, strand, schoolYear, guardianName, schedule, adviser, course);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_UpdateUser")]
 		public int sp_UpdateUser(
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Firstname", DbType="VarChar(100)")] string firstname, 
@@ -293,6 +256,45 @@ namespace AppSystem
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstname, middlename, lastname, email, level_cn, username, password, biometrics, rFID, aVATAR, lRN, grade, sECTION_, status, remarks, phoneNo, recID, schedule, guardian, adviser, course);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_InsertUser")]
+		public int sp_InsertUser(
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Firstname", DbType="VarChar(100)")] string firstname, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Middlename", DbType="VarChar(100)")] string middlename, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Lastname", DbType="VarChar(100)")] string lastname, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(100)")] string email, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Level_cn", DbType="VarChar(100)")] string level_cn, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Username", DbType="VarChar(100)")] string username, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Password", DbType="VarChar(100)")] string password, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarBinary(MAX)")] System.Data.Linq.Binary biometrics, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="RFID", DbType="VarChar(100)")] string rFID, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AVATAR", DbType="VarBinary(MAX)")] System.Data.Linq.Binary aVATAR, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="LRN", DbType="VarChar(100)")] string lRN, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Grade", DbType="VarChar(100)")] string grade, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SECTION_", DbType="VarChar(100)")] string sECTION_, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Status", DbType="VarChar(100)")] string status, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Remarks", DbType="VarChar(100)")] string remarks, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PhoneNo", DbType="VarChar(100)")] string phoneNo, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="BirthDate", DbType="VarChar(100)")] string birthDate, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Strand", DbType="VarChar(100)")] string strand, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolYear", DbType="VarChar(100)")] string schoolYear, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="GuardianName", DbType="VarChar(100)")] string guardianName, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Schedule", DbType="VarChar(100)")] string schedule, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Adviser", DbType="VarChar(100)")] string adviser, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Course", DbType="VarChar(100)")] string course, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="GradeOther", DbType="VarChar(100)")] string gradeOther, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SectionOther", DbType="VarChar(100)")] string sectionOther)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstname, middlename, lastname, email, level_cn, username, password, biometrics, rFID, aVATAR, lRN, grade, sECTION_, status, remarks, phoneNo, birthDate, strand, schoolYear, guardianName, schedule, adviser, course, gradeOther, sectionOther);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AccountSelectByID")]
+		public ISingleResult<AccountSelectByIDResult> AccountSelectByID([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RecID", DbType="VarChar(50)")] string recID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), recID);
+			return ((ISingleResult<AccountSelectByIDResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -1344,482 +1346,6 @@ namespace AppSystem
 		}
 	}
 	
-	public partial class AccountSelectByIDResult
-	{
-		
-		private int _cn;
-		
-		private string _Firstname;
-		
-		private string _Middlename;
-		
-		private string _Lastname;
-		
-		private string _Email;
-		
-		private System.Nullable<int> _Level_cn;
-		
-		private string _Username;
-		
-		private string _Password;
-		
-		private System.Data.Linq.Binary _biometrics;
-		
-		private string _RFID;
-		
-		private System.Data.Linq.Binary _AVATAR;
-		
-		private string _LRN;
-		
-		private System.Nullable<int> _Grade;
-		
-		private System.Nullable<int> _Section;
-		
-		private string _Status;
-		
-		private string _Remarks;
-		
-		private string _PhoneNo;
-		
-		private System.Nullable<System.DateTime> _BirrthDate;
-		
-		private string _Strand;
-		
-		private string _SchoolYear;
-		
-		private string _GuardianName;
-		
-		private string _Schedule;
-		
-		private string _RowRemark;
-		
-		private string _Adviser;
-		
-		private string _GradeName;
-		
-		private string _Section_;
-		
-		public AccountSelectByIDResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn", DbType="Int NOT NULL")]
-		public int cn
-		{
-			get
-			{
-				return this._cn;
-			}
-			set
-			{
-				if ((this._cn != value))
-				{
-					this._cn = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Firstname", DbType="VarChar(254)")]
-		public string Firstname
-		{
-			get
-			{
-				return this._Firstname;
-			}
-			set
-			{
-				if ((this._Firstname != value))
-				{
-					this._Firstname = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Middlename", DbType="VarChar(254)")]
-		public string Middlename
-		{
-			get
-			{
-				return this._Middlename;
-			}
-			set
-			{
-				if ((this._Middlename != value))
-				{
-					this._Middlename = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Lastname", DbType="VarChar(254)")]
-		public string Lastname
-		{
-			get
-			{
-				return this._Lastname;
-			}
-			set
-			{
-				if ((this._Lastname != value))
-				{
-					this._Lastname = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="VarChar(254)")]
-		public string Email
-		{
-			get
-			{
-				return this._Email;
-			}
-			set
-			{
-				if ((this._Email != value))
-				{
-					this._Email = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Level_cn", DbType="Int")]
-		public System.Nullable<int> Level_cn
-		{
-			get
-			{
-				return this._Level_cn;
-			}
-			set
-			{
-				if ((this._Level_cn != value))
-				{
-					this._Level_cn = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Username", DbType="VarChar(254)")]
-		public string Username
-		{
-			get
-			{
-				return this._Username;
-			}
-			set
-			{
-				if ((this._Username != value))
-				{
-					this._Username = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Password", DbType="VarChar(254)")]
-		public string Password
-		{
-			get
-			{
-				return this._Password;
-			}
-			set
-			{
-				if ((this._Password != value))
-				{
-					this._Password = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_biometrics", DbType="VarBinary(MAX)")]
-		public System.Data.Linq.Binary biometrics
-		{
-			get
-			{
-				return this._biometrics;
-			}
-			set
-			{
-				if ((this._biometrics != value))
-				{
-					this._biometrics = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RFID", DbType="VarChar(100)")]
-		public string RFID
-		{
-			get
-			{
-				return this._RFID;
-			}
-			set
-			{
-				if ((this._RFID != value))
-				{
-					this._RFID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AVATAR", DbType="VarBinary(MAX)")]
-		public System.Data.Linq.Binary AVATAR
-		{
-			get
-			{
-				return this._AVATAR;
-			}
-			set
-			{
-				if ((this._AVATAR != value))
-				{
-					this._AVATAR = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LRN", DbType="VarChar(20)")]
-		public string LRN
-		{
-			get
-			{
-				return this._LRN;
-			}
-			set
-			{
-				if ((this._LRN != value))
-				{
-					this._LRN = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Grade", DbType="Int")]
-		public System.Nullable<int> Grade
-		{
-			get
-			{
-				return this._Grade;
-			}
-			set
-			{
-				if ((this._Grade != value))
-				{
-					this._Grade = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Section", DbType="Int")]
-		public System.Nullable<int> Section
-		{
-			get
-			{
-				return this._Section;
-			}
-			set
-			{
-				if ((this._Section != value))
-				{
-					this._Section = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(20)")]
-		public string Status
-		{
-			get
-			{
-				return this._Status;
-			}
-			set
-			{
-				if ((this._Status != value))
-				{
-					this._Status = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remarks", DbType="VarChar(20)")]
-		public string Remarks
-		{
-			get
-			{
-				return this._Remarks;
-			}
-			set
-			{
-				if ((this._Remarks != value))
-				{
-					this._Remarks = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhoneNo", DbType="VarChar(50)")]
-		public string PhoneNo
-		{
-			get
-			{
-				return this._PhoneNo;
-			}
-			set
-			{
-				if ((this._PhoneNo != value))
-				{
-					this._PhoneNo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BirrthDate", DbType="DateTime2")]
-		public System.Nullable<System.DateTime> BirrthDate
-		{
-			get
-			{
-				return this._BirrthDate;
-			}
-			set
-			{
-				if ((this._BirrthDate != value))
-				{
-					this._BirrthDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Strand", DbType="VarChar(100)")]
-		public string Strand
-		{
-			get
-			{
-				return this._Strand;
-			}
-			set
-			{
-				if ((this._Strand != value))
-				{
-					this._Strand = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SchoolYear", DbType="VarChar(100)")]
-		public string SchoolYear
-		{
-			get
-			{
-				return this._SchoolYear;
-			}
-			set
-			{
-				if ((this._SchoolYear != value))
-				{
-					this._SchoolYear = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GuardianName", DbType="VarChar(100)")]
-		public string GuardianName
-		{
-			get
-			{
-				return this._GuardianName;
-			}
-			set
-			{
-				if ((this._GuardianName != value))
-				{
-					this._GuardianName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Schedule", DbType="VarChar(100)")]
-		public string Schedule
-		{
-			get
-			{
-				return this._Schedule;
-			}
-			set
-			{
-				if ((this._Schedule != value))
-				{
-					this._Schedule = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RowRemark", DbType="VarChar(100)")]
-		public string RowRemark
-		{
-			get
-			{
-				return this._RowRemark;
-			}
-			set
-			{
-				if ((this._RowRemark != value))
-				{
-					this._RowRemark = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Adviser", DbType="VarChar(100)")]
-		public string Adviser
-		{
-			get
-			{
-				return this._Adviser;
-			}
-			set
-			{
-				if ((this._Adviser != value))
-				{
-					this._Adviser = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeName", DbType="VarChar(100)")]
-		public string GradeName
-		{
-			get
-			{
-				return this._GradeName;
-			}
-			set
-			{
-				if ((this._GradeName != value))
-				{
-					this._GradeName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Section_", DbType="VarChar(100)")]
-		public string Section_
-		{
-			get
-			{
-				return this._Section_;
-			}
-			set
-			{
-				if ((this._Section_ != value))
-				{
-					this._Section_ = value;
-				}
-			}
-		}
-	}
-	
 	public partial class sp_AccountSELECTResult
 	{
 		
@@ -2429,6 +1955,536 @@ namespace AppSystem
 				if ((this._Remark != value))
 				{
 					this._Remark = value;
+				}
+			}
+		}
+	}
+	
+	public partial class AccountSelectByIDResult
+	{
+		
+		private int _cn;
+		
+		private string _Firstname;
+		
+		private string _Middlename;
+		
+		private string _Lastname;
+		
+		private string _Email;
+		
+		private System.Nullable<int> _Level_cn;
+		
+		private string _Username;
+		
+		private string _Password;
+		
+		private System.Data.Linq.Binary _biometrics;
+		
+		private string _RFID;
+		
+		private System.Data.Linq.Binary _AVATAR;
+		
+		private string _LRN;
+		
+		private System.Nullable<int> _Grade;
+		
+		private System.Nullable<int> _Section;
+		
+		private string _Status;
+		
+		private string _Remarks;
+		
+		private string _PhoneNo;
+		
+		private System.Nullable<System.DateTime> _BirrthDate;
+		
+		private string _Strand;
+		
+		private string _SchoolYear;
+		
+		private string _GuardianName;
+		
+		private string _Schedule;
+		
+		private string _RowRemark;
+		
+		private string _Adviser;
+		
+		private string _Course;
+		
+		private string _GradeOther;
+		
+		private string _SectionOther;
+		
+		private string _GradeName;
+		
+		private string _Section_;
+		
+		public AccountSelectByIDResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn", DbType="Int NOT NULL")]
+		public int cn
+		{
+			get
+			{
+				return this._cn;
+			}
+			set
+			{
+				if ((this._cn != value))
+				{
+					this._cn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Firstname", DbType="VarChar(254)")]
+		public string Firstname
+		{
+			get
+			{
+				return this._Firstname;
+			}
+			set
+			{
+				if ((this._Firstname != value))
+				{
+					this._Firstname = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Middlename", DbType="VarChar(254)")]
+		public string Middlename
+		{
+			get
+			{
+				return this._Middlename;
+			}
+			set
+			{
+				if ((this._Middlename != value))
+				{
+					this._Middlename = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Lastname", DbType="VarChar(254)")]
+		public string Lastname
+		{
+			get
+			{
+				return this._Lastname;
+			}
+			set
+			{
+				if ((this._Lastname != value))
+				{
+					this._Lastname = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="VarChar(254)")]
+		public string Email
+		{
+			get
+			{
+				return this._Email;
+			}
+			set
+			{
+				if ((this._Email != value))
+				{
+					this._Email = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Level_cn", DbType="Int")]
+		public System.Nullable<int> Level_cn
+		{
+			get
+			{
+				return this._Level_cn;
+			}
+			set
+			{
+				if ((this._Level_cn != value))
+				{
+					this._Level_cn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Username", DbType="VarChar(254)")]
+		public string Username
+		{
+			get
+			{
+				return this._Username;
+			}
+			set
+			{
+				if ((this._Username != value))
+				{
+					this._Username = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Password", DbType="VarChar(254)")]
+		public string Password
+		{
+			get
+			{
+				return this._Password;
+			}
+			set
+			{
+				if ((this._Password != value))
+				{
+					this._Password = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_biometrics", DbType="VarBinary(MAX)")]
+		public System.Data.Linq.Binary biometrics
+		{
+			get
+			{
+				return this._biometrics;
+			}
+			set
+			{
+				if ((this._biometrics != value))
+				{
+					this._biometrics = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RFID", DbType="VarChar(100)")]
+		public string RFID
+		{
+			get
+			{
+				return this._RFID;
+			}
+			set
+			{
+				if ((this._RFID != value))
+				{
+					this._RFID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AVATAR", DbType="VarBinary(MAX)")]
+		public System.Data.Linq.Binary AVATAR
+		{
+			get
+			{
+				return this._AVATAR;
+			}
+			set
+			{
+				if ((this._AVATAR != value))
+				{
+					this._AVATAR = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LRN", DbType="VarChar(20)")]
+		public string LRN
+		{
+			get
+			{
+				return this._LRN;
+			}
+			set
+			{
+				if ((this._LRN != value))
+				{
+					this._LRN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Grade", DbType="Int")]
+		public System.Nullable<int> Grade
+		{
+			get
+			{
+				return this._Grade;
+			}
+			set
+			{
+				if ((this._Grade != value))
+				{
+					this._Grade = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Section", DbType="Int")]
+		public System.Nullable<int> Section
+		{
+			get
+			{
+				return this._Section;
+			}
+			set
+			{
+				if ((this._Section != value))
+				{
+					this._Section = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(20)")]
+		public string Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this._Status = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remarks", DbType="VarChar(20)")]
+		public string Remarks
+		{
+			get
+			{
+				return this._Remarks;
+			}
+			set
+			{
+				if ((this._Remarks != value))
+				{
+					this._Remarks = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhoneNo", DbType="VarChar(50)")]
+		public string PhoneNo
+		{
+			get
+			{
+				return this._PhoneNo;
+			}
+			set
+			{
+				if ((this._PhoneNo != value))
+				{
+					this._PhoneNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BirrthDate", DbType="DateTime2")]
+		public System.Nullable<System.DateTime> BirrthDate
+		{
+			get
+			{
+				return this._BirrthDate;
+			}
+			set
+			{
+				if ((this._BirrthDate != value))
+				{
+					this._BirrthDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Strand", DbType="VarChar(100)")]
+		public string Strand
+		{
+			get
+			{
+				return this._Strand;
+			}
+			set
+			{
+				if ((this._Strand != value))
+				{
+					this._Strand = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SchoolYear", DbType="VarChar(100)")]
+		public string SchoolYear
+		{
+			get
+			{
+				return this._SchoolYear;
+			}
+			set
+			{
+				if ((this._SchoolYear != value))
+				{
+					this._SchoolYear = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GuardianName", DbType="VarChar(100)")]
+		public string GuardianName
+		{
+			get
+			{
+				return this._GuardianName;
+			}
+			set
+			{
+				if ((this._GuardianName != value))
+				{
+					this._GuardianName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Schedule", DbType="VarChar(100)")]
+		public string Schedule
+		{
+			get
+			{
+				return this._Schedule;
+			}
+			set
+			{
+				if ((this._Schedule != value))
+				{
+					this._Schedule = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RowRemark", DbType="VarChar(100)")]
+		public string RowRemark
+		{
+			get
+			{
+				return this._RowRemark;
+			}
+			set
+			{
+				if ((this._RowRemark != value))
+				{
+					this._RowRemark = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Adviser", DbType="VarChar(100)")]
+		public string Adviser
+		{
+			get
+			{
+				return this._Adviser;
+			}
+			set
+			{
+				if ((this._Adviser != value))
+				{
+					this._Adviser = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Course", DbType="VarChar(100)")]
+		public string Course
+		{
+			get
+			{
+				return this._Course;
+			}
+			set
+			{
+				if ((this._Course != value))
+				{
+					this._Course = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeOther", DbType="VarChar(100)")]
+		public string GradeOther
+		{
+			get
+			{
+				return this._GradeOther;
+			}
+			set
+			{
+				if ((this._GradeOther != value))
+				{
+					this._GradeOther = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SectionOther", DbType="VarChar(100)")]
+		public string SectionOther
+		{
+			get
+			{
+				return this._SectionOther;
+			}
+			set
+			{
+				if ((this._SectionOther != value))
+				{
+					this._SectionOther = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeName", DbType="VarChar(100)")]
+		public string GradeName
+		{
+			get
+			{
+				return this._GradeName;
+			}
+			set
+			{
+				if ((this._GradeName != value))
+				{
+					this._GradeName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Section_", DbType="VarChar(100)")]
+		public string Section_
+		{
+			get
+			{
+				return this._Section_;
+			}
+			set
+			{
+				if ((this._Section_ != value))
+				{
+					this._Section_ = value;
 				}
 			}
 		}

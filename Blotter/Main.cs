@@ -471,6 +471,8 @@ namespace AppSystem
         {
             string grade = ((cboGrade.SelectedItem as ComboBoxItem).Value.ToString());
             string section = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
+            string gradeText = cboGrade.SelectedItem.ToString();
+            string sectionText = cboSection.SelectedItem.ToString();
             string adviser = cboAdviser.Text;
             string rDate = txtDate.Text;
 
@@ -488,8 +490,8 @@ namespace AppSystem
             //crDTR.Refresh();
             //
             crDTR.SetParameterValue("Date", "Date Generated: " + rDate);
-            crDTR.SetParameterValue("Grade", "Grade: " + grade);
-            crDTR.SetParameterValue("Section", "Section: " + section);
+            crDTR.SetParameterValue("Grade", "Grade: " + gradeText);
+            crDTR.SetParameterValue("Section", "Section: " + sectionText);
             crDTR.SetParameterValue("SystemName", Tool.Systemname);
             crDTR.SetParameterValue("Adviser", "Adviser: " + adviser);
 

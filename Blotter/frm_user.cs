@@ -135,18 +135,7 @@ namespace AppSystem
                 }
                 else
                 {
-                    int lrn = db.sp_checkLRN(LRNStudent.Text).Count();
-
-                    if (lrn >= 1)
-                    {
-                        MessageBox.Show("LRN already exist!", Tool.Systemname, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        return;
-                    }
-                    else
-                    {
-                        StudentSave();
-
-                    }
+                    StudentSave();
 
 
 
@@ -164,16 +153,16 @@ namespace AppSystem
             string Section = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
             string course = ((cboCourse.SelectedItem as ComboBoxItem).Value.ToString());
 
-            if (Grade.Contains("13"))
+            if (!Grade.Contains("13"))
             {
-                Grade = txtGradeOther.Text;
+                txtGradeOther.Text  = "";
 
             }
 
             
-            if (Section.Contains("3"))
+            if (!Section.Contains("3"))
             {
-                Section = txtSection.Text;
+               txtSectionOther.Text = "";
             }
 
            
@@ -184,24 +173,50 @@ namespace AppSystem
 
             if (cmd_save.Text == "&Save")
             {
+                int lrn = db.sp_checkLRN(LRNStudent.Text).Count();
 
-                db.sp_InsertUser(FirstNameStudent.Text, MiddleNameStudent.Text, LastNameStudent.Text, "", "3", "", "", new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), txtQrCode.Text, Tool.ImageToByte(pbStudent.Image), LRNStudent.Text, Grade, Section, "", "", PhoneNumberStudent.Text, dtBirthDate.Text, txtStrand.Text, txtSy.Text, txtGuardiansName.Text, dt_TimeIN.Text + "/" + dt_TimeOUT.Text, txtAdviser.Text,course);
+                if (lrn >= 1)
+                {
+                    MessageBox.Show("LRN already exist!", Tool.Systemname, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+                else
+                {
+                    db.sp_InsertUser(FirstNameStudent.Text, MiddleNameStudent.Text, LastNameStudent.Text, "", "3", "", "", new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), txtQrCode.Text, Tool.ImageToByte(pbStudent.Image), LRNStudent.Text, Grade, Section, "", "", PhoneNumberStudent.Text, dtBirthDate.Text, txtStrand.Text, txtSy.Text, txtGuardiansName.Text, dt_TimeIN.Text + "/" + dt_TimeOUT.Text, txtAdviser.Text, course,txtGradeOther.Text,txtSectionOther.Text);
 
-                MessageBox.Show("Changes Successfully saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                fmain.getAccounts("%");
-                FingerPrintScanner.FingerprintTemplate = null;
-                this.Close();
+                    MessageBox.Show("Changes Successfully saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    fmain.getAccounts("%");
+                    FingerPrintScanner.FingerprintTemplate = null;
+                    this.Close();
+
+                }
+
+
+                
                 //
             }
             else
             {
 
+                int lrn = db.sp_checkLRN(LRNStudent.Text).Count();
 
-                string level = ((this.cbo_level.SelectedItem as ComboBoxItem).Value.ToString());
-                db.sp_UpdateUser(FirstNameStudent.Text, MiddleNameStudent.Text, LastNameStudent.Text, "", "3", "", "", new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), txtQrCode.Text, Tool.ImageToByte(pbStudent.Image), LRNStudent.Text, Grade, Section, "", "", PhoneNumberStudent.Text, this.Tag.ToString(), dt_TimeIN.Text + "/" + dt_TimeOUT.Text, txtGuardiansName.Text, txtAdviser.Text,course);
-                MessageBox.Show("Changes Successfully saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                fmain.getAccounts("%");
-                this.Close();
+                if (lrn > 1)
+                {
+                    MessageBox.Show("LRN already exist!", Tool.Systemname, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+                else
+                {
+                    string level = ((this.cbo_level.SelectedItem as ComboBoxItem).Value.ToString());
+                    db.sp_UpdateUser(FirstNameStudent.Text, MiddleNameStudent.Text, LastNameStudent.Text, "", "3", "", "", new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), txtQrCode.Text, Tool.ImageToByte(pbStudent.Image), LRNStudent.Text, Grade, Section, "", "", PhoneNumberStudent.Text, this.Tag.ToString(), dt_TimeIN.Text + "/" + dt_TimeOUT.Text, txtGuardiansName.Text, txtAdviser.Text, course);
+                    MessageBox.Show("Changes Successfully saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    fmain.getAccounts("%");
+                    this.Close();
+
+                }
+
+
+                
 
 
             }
@@ -230,7 +245,7 @@ namespace AppSystem
                     //if (rbUser.Checked == true)
                     //{
                     string level = ((this.cbo_level.SelectedItem as ComboBoxItem).Value.ToString());
-                    db.sp_InsertUser(txt_fname.Text, txt_MName.Text, txt_Lname.Text, txt_username.Text, level, txt_username.Text, Tool.Encrypt(txt_password.Text), new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), "", Tool.ImageToByte(pbUser.Image), "", "0", "0", "", "", PhoneNumberStudent.Text, "", "", "", "", "", "","");
+                    db.sp_InsertUser(txt_fname.Text, txt_MName.Text, txt_Lname.Text, txt_username.Text, level, txt_username.Text, Tool.Encrypt(txt_password.Text), new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), "", Tool.ImageToByte(pbUser.Image), "", "0", "0", "", "", PhoneNumberStudent.Text, "", "", "", "", "", "", "", "", "");
 
                     //}
                     //else
@@ -283,7 +298,8 @@ namespace AppSystem
                 cbo_level.Tag = i.Level_cn;
                 txt_username.Text = i.Email;
 
-
+                txtGradeOther.Text = i.GradeOther;
+                txtSectionOther.Text = i.SectionOther;
 
                 try
                 {
@@ -336,7 +352,7 @@ namespace AppSystem
                 txtGradeOther.Text = i.GradeName;
                 PhoneNumberStudent.Text = i.PhoneNo;
                 cboSection.Text = i.Section_;
-                txtSection.Text = i.Section_;
+                txtSectionOther.Text = i.Section_;
                 txtGuardiansName.Text = i.GuardianName;
                 string schedule = i.Schedule;
                 string[] scheduleSplited = schedule.Split('/');
@@ -558,12 +574,12 @@ namespace AppSystem
             string Section = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
             if (Section.Contains("13"))
             {
-                txtSection.Enabled = true;
+                txtSectionOther.Enabled = true;
 
             }
             else
             {
-                txtSection.Enabled = false;
+                txtSectionOther.Enabled = false;
             }
         }
 
