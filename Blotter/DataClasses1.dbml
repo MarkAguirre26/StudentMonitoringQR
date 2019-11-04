@@ -200,30 +200,6 @@
       <Column Name="Remark" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.sp_UpdateUser" Method="sp_UpdateUser">
-    <Parameter Name="Firstname" Parameter="firstname" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Middlename" Parameter="middlename" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Lastname" Parameter="lastname" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Level_cn" Parameter="level_cn" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="biometrics" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
-    <Parameter Name="RFID" Parameter="rFID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AVATAR" Parameter="aVATAR" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
-    <Parameter Name="LRN" Parameter="lRN" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Grade" Parameter="grade" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SECTION_" Parameter="sECTION_" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Remarks" Parameter="remarks" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="PhoneNo" Parameter="phoneNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="RecID" Parameter="recID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Schedule" Parameter="schedule" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Guardian" Parameter="guardian" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Adviser" Parameter="adviser" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Course" Parameter="course" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.sp_InsertUser" Method="sp_InsertUser">
     <Parameter Name="Firstname" Parameter="firstname" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="Middlename" Parameter="middlename" Type="System.String" DbType="VarChar(100)" />
@@ -246,6 +222,32 @@
     <Parameter Name="SchoolYear" Parameter="schoolYear" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="GuardianName" Parameter="guardianName" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="Schedule" Parameter="schedule" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Adviser" Parameter="adviser" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Course" Parameter="course" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="GradeOther" Parameter="gradeOther" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SectionOther" Parameter="sectionOther" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_UpdateUser" Method="sp_UpdateUser">
+    <Parameter Name="Firstname" Parameter="firstname" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Middlename" Parameter="middlename" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Lastname" Parameter="lastname" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Level_cn" Parameter="level_cn" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="biometrics" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="RFID" Parameter="rFID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AVATAR" Parameter="aVATAR" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="LRN" Parameter="lRN" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Grade" Parameter="grade" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SECTION_" Parameter="sECTION_" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Remarks" Parameter="remarks" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PhoneNo" Parameter="phoneNo" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="RecID" Parameter="recID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Schedule" Parameter="schedule" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Guardian" Parameter="guardian" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="Adviser" Parameter="adviser" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="Course" Parameter="course" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="GradeOther" Parameter="gradeOther" Type="System.String" DbType="VarChar(100)" />
@@ -284,6 +286,7 @@
       <Column Name="SectionOther" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="GradeName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Section_" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CourseName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

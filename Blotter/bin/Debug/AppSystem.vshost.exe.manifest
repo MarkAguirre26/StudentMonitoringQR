@@ -208,14 +208,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSystem.exe" size="1509888">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSystem.exe" size="1513472">
       <assemblyIdentity name="AppSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E/kXkYeyPUA6Y20762Z/QhNxwNSE2lvS7MuR/Gb5mkI=</dsig:DigestValue>
+        <dsig:DigestValue>AZ46qVJmhhX2oyy14OIMvVU2KGyrRFmnfVotleoT+ag=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -387,13 +387,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="AppSystem.exe.config" size="2001">
+  <file name="AppSystem.exe.config" size="2247">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>9Z4D73geh8Pp8JDvK8o1S0a291lSZTC30c9E7kUWt3g=</dsig:DigestValue>
+      <dsig:DigestValue>Gsw6O/YVqyWepmVG/KBDnLbXFroRJ/xjs/vJETVdTuc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Sms.dll" size="10240">

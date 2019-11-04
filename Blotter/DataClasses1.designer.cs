@@ -230,34 +230,6 @@ namespace AppSystem
 			return ((ISingleResult<sp_COURSEResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_UpdateUser")]
-		public int sp_UpdateUser(
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Firstname", DbType="VarChar(100)")] string firstname, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Middlename", DbType="VarChar(100)")] string middlename, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Lastname", DbType="VarChar(100)")] string lastname, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(100)")] string email, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Level_cn", DbType="VarChar(100)")] string level_cn, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Username", DbType="VarChar(100)")] string username, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Password", DbType="VarChar(100)")] string password, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarBinary(MAX)")] System.Data.Linq.Binary biometrics, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="RFID", DbType="VarChar(100)")] string rFID, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AVATAR", DbType="VarBinary(MAX)")] System.Data.Linq.Binary aVATAR, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="LRN", DbType="VarChar(100)")] string lRN, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Grade", DbType="VarChar(100)")] string grade, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SECTION_", DbType="VarChar(100)")] string sECTION_, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Status", DbType="VarChar(100)")] string status, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Remarks", DbType="VarChar(100)")] string remarks, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PhoneNo", DbType="VarChar(100)")] string phoneNo, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="RecID", DbType="VarChar(100)")] string recID, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Schedule", DbType="VarChar(100)")] string schedule, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Guardian", DbType="VarChar(100)")] string guardian, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Adviser", DbType="VarChar(100)")] string adviser, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Course", DbType="VarChar(100)")] string course)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstname, middlename, lastname, email, level_cn, username, password, biometrics, rFID, aVATAR, lRN, grade, sECTION_, status, remarks, phoneNo, recID, schedule, guardian, adviser, course);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_InsertUser")]
 		public int sp_InsertUser(
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Firstname", DbType="VarChar(100)")] string firstname, 
@@ -287,6 +259,36 @@ namespace AppSystem
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SectionOther", DbType="VarChar(100)")] string sectionOther)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstname, middlename, lastname, email, level_cn, username, password, biometrics, rFID, aVATAR, lRN, grade, sECTION_, status, remarks, phoneNo, birthDate, strand, schoolYear, guardianName, schedule, adviser, course, gradeOther, sectionOther);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_UpdateUser")]
+		public int sp_UpdateUser(
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Firstname", DbType="VarChar(100)")] string firstname, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Middlename", DbType="VarChar(100)")] string middlename, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Lastname", DbType="VarChar(100)")] string lastname, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(100)")] string email, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Level_cn", DbType="VarChar(100)")] string level_cn, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Username", DbType="VarChar(100)")] string username, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Password", DbType="VarChar(100)")] string password, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarBinary(MAX)")] System.Data.Linq.Binary biometrics, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="RFID", DbType="VarChar(100)")] string rFID, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AVATAR", DbType="VarBinary(MAX)")] System.Data.Linq.Binary aVATAR, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="LRN", DbType="VarChar(100)")] string lRN, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Grade", DbType="VarChar(100)")] string grade, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SECTION_", DbType="VarChar(100)")] string sECTION_, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Status", DbType="VarChar(100)")] string status, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Remarks", DbType="VarChar(100)")] string remarks, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PhoneNo", DbType="VarChar(100)")] string phoneNo, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="RecID", DbType="VarChar(100)")] string recID, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Schedule", DbType="VarChar(100)")] string schedule, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Guardian", DbType="VarChar(100)")] string guardian, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Adviser", DbType="VarChar(100)")] string adviser, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Course", DbType="VarChar(100)")] string course, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="GradeOther", DbType="VarChar(100)")] string gradeOther, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SectionOther", DbType="VarChar(100)")] string sectionOther)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstname, middlename, lastname, email, level_cn, username, password, biometrics, rFID, aVATAR, lRN, grade, sECTION_, status, remarks, phoneNo, recID, schedule, guardian, adviser, course, gradeOther, sectionOther);
 			return ((int)(result.ReturnValue));
 		}
 		
@@ -2021,6 +2023,8 @@ namespace AppSystem
 		
 		private string _Section_;
 		
+		private string _CourseName;
+		
 		public AccountSelectByIDResult()
 		{
 		}
@@ -2485,6 +2489,22 @@ namespace AppSystem
 				if ((this._Section_ != value))
 				{
 					this._Section_ = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CourseName", DbType="VarChar(100)")]
+		public string CourseName
+		{
+			get
+			{
+				return this._CourseName;
+			}
+			set
+			{
+				if ((this._CourseName != value))
+				{
+					this._CourseName = value;
 				}
 			}
 		}

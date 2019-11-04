@@ -199,6 +199,22 @@ C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.
 C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.application
 C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe
 C:\Users\jlolaguer\Desktop\new qr\StudentMonitoring\Blotter\obj\Debug\AppSystem.pdb
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.pdb
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmRequest.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_qrEncode.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Report.FrmReport.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmDTR.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_BrgyClearance.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_camera.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_fingerPrint.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_login.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_SelecDate.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_server.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_user.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Main.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Properties.Resources.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Public.CameraControl.resources
+C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csproj.GenerateResource.Cache
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.config
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AppSystem.exe.manifest
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\AppSystem.application
@@ -227,22 +243,6 @@ C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.xml
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.pdb
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\bin\Debug\zxing.presentation.xml
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csprojResolveAssemblyReference.cache
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmRequest.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_qrEncode.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Report.FrmReport.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.FrmDTR.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_BrgyClearance.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_camera.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_fingerPrint.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_login.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_SelecDate.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_server.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.frm_user.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Main.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Properties.Resources.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.Public.CameraControl.resources
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\StudentMonitoring.csproj.GenerateResource.Cache
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe.manifest
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.application
 C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.exe
-C:\Users\Mark\Downloads\StudentMonitoring\Blotter\obj\Debug\AppSystem.pdb

@@ -53,7 +53,7 @@ namespace AppSystem
             var Sections = db.SectionSELECT().ToList();
             foreach (var i in Sections)
             {
-                cboSection.Items.Add(new ComboBoxItem(i.Section, i.RecID.ToString()));
+                cboSection.Items.Add(new ComboBoxItem(i.Section, i.RecID.ToString() +"/"+i.Remark));
 
             }
 
@@ -72,6 +72,10 @@ namespace AppSystem
             }
 
 
+         
+
+
+
 
             if (isEdit)
             {
@@ -87,6 +91,7 @@ namespace AppSystem
 
 
             if (this.Tag == null)
+            
             {
 
                 cmd_save.Text = "&Save";
@@ -103,6 +108,36 @@ namespace AppSystem
                 cbo_level.SelectedIndex = Convert.ToInt32(fmain.UserLevel) - 1;
 
             }
+
+
+
+            if (cboGrade.Text.Contains("OTHER"))
+            {
+                labelStrand.Visible = true;
+                txtGradeOther.Enabled = true;
+                txtStrand.Visible = true;
+            }
+            else
+            {
+                txtGradeOther.Enabled = false;
+                txtGradeOther.Text = "";
+                labelStrand.Visible = false;
+                txtStrand.Visible = false;
+            }
+
+            if (cboSection.Text.Contains("OTHER"))
+            {
+                txtSectionOther.Enabled = true;
+
+            }
+            else
+            {
+                txtSectionOther.Text = "";
+                txtSectionOther.Enabled = false;
+            }
+
+
+
 
             Process.Start(Tool.RFID_Reader_Path);
 
@@ -128,7 +163,7 @@ namespace AppSystem
             }
             else
             {
-                if (FirstNameStudent.Text == "" || MiddleNameStudent.Text == "" || LastNameStudent.Text == "" || LRNStudent.Text == "" || cboGrade.Text == "" || cboSection.Text == "" || FingerPrintScanner.FingerprintTemplate == null || FingerPrintScanner.FingerprintTemplate.Length < 0)//|| FingerPrintScanner.FingerprintTemplate==null
+                if (FirstNameStudent.Text == "" || MiddleNameStudent.Text == "" || LastNameStudent.Text == "" || LRNStudent.Text == "" || cboGrade.Text == "" || cboSection.Text == "" || cboCourse.SelectedIndex == -1 || FingerPrintScanner.FingerprintTemplate == null || FingerPrintScanner.FingerprintTemplate.Length < 0)//|| FingerPrintScanner.FingerprintTemplate==null
                 {
                     MessageBox.Show("Please  fill all required information", "Empty String", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
@@ -151,26 +186,32 @@ namespace AppSystem
         {
             string Grade = ((cboGrade.SelectedItem as ComboBoxItem).Value.ToString());
             string Section = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
+
             string course = ((cboCourse.SelectedItem as ComboBoxItem).Value.ToString());
 
             if (!Grade.Contains("13"))
             {
                 txtGradeOther.Text  = "";
+                string[] g = Grade.Split('/');
+                Grade = g[0];
+
 
             }
-
+          
             
-            if (!Section.Contains("3"))
+            if (!Section.Contains("0"))
             {
                txtSectionOther.Text = "";
+               string[] s = Section.Split('/');
+               Section = s[0];
+
             }
+            
 
            
 
 
-            string[] g = Grade.Split('/');
-            Grade = g[0];
-
+            
             if (cmd_save.Text == "&Save")
             {
                 int lrn = db.sp_checkLRN(LRNStudent.Text).Count();
@@ -208,7 +249,7 @@ namespace AppSystem
                 else
                 {
                     string level = ((this.cbo_level.SelectedItem as ComboBoxItem).Value.ToString());
-                    db.sp_UpdateUser(FirstNameStudent.Text, MiddleNameStudent.Text, LastNameStudent.Text, "", "3", "", "", new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), txtQrCode.Text, Tool.ImageToByte(pbStudent.Image), LRNStudent.Text, Grade, Section, "", "", PhoneNumberStudent.Text, this.Tag.ToString(), dt_TimeIN.Text + "/" + dt_TimeOUT.Text, txtGuardiansName.Text, txtAdviser.Text, course);
+                    db.sp_UpdateUser(FirstNameStudent.Text, MiddleNameStudent.Text, LastNameStudent.Text, "", "3", "", "", new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), txtQrCode.Text, Tool.ImageToByte(pbStudent.Image), LRNStudent.Text, Grade, Section, "", "", PhoneNumberStudent.Text, this.Tag.ToString(), dt_TimeIN.Text + "/" + dt_TimeOUT.Text, txtGuardiansName.Text, txtAdviser.Text, course,txtGradeOther.Text,txtSectionOther.Text);
                     MessageBox.Show("Changes Successfully saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     fmain.getAccounts("%");
                     this.Close();
@@ -270,7 +311,7 @@ namespace AppSystem
 
 
                 string level = ((this.cbo_level.SelectedItem as ComboBoxItem).Value.ToString());
-                db.sp_UpdateUser(txt_fname.Text, txt_MName.Text, txt_Lname.Text, txt_username.Text, level, txt_username.Text, Tool.Encrypt(txt_password.Text), new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), "", Tool.ImageToByte(pbUser.Image), "", "0", "0", "", "", PhoneNumberStudent.Text, this.Tag.ToString(), "", txtGuardiansName.Text, "","");
+                db.sp_UpdateUser(txt_fname.Text, txt_MName.Text, txt_Lname.Text, txt_username.Text, level, txt_username.Text, Tool.Encrypt(txt_password.Text), new System.Data.Linq.Binary(FingerPrintScanner.FingerprintTemplate), "", Tool.ImageToByte(pbUser.Image), "", "0", "0", "", "", PhoneNumberStudent.Text, this.Tag.ToString(), "", txtGuardiansName.Text, "","","","");
                 MessageBox.Show("Changes Successfully saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 fmain.getAccounts("%");
                 this.Close();
@@ -297,9 +338,7 @@ namespace AppSystem
                 txt_username.Text = i.Email;
                 cbo_level.Tag = i.Level_cn;
                 txt_username.Text = i.Email;
-
-                txtGradeOther.Text = i.GradeOther;
-                txtSectionOther.Text = i.SectionOther;
+                
 
                 try
                 {
@@ -349,10 +388,14 @@ namespace AppSystem
                 LRNStudent.Text = i.LRN;
                 txtQrCode.Text = i.RFID;
                 cboGrade.Text = i.GradeName;
+                cboSection.Text = i.Section_; 
+                cboCourse.Text = i.CourseName;
+              
+                txtSectionOther.Text = i.SectionOther;
                 txtGradeOther.Text = i.GradeName;
                 PhoneNumberStudent.Text = i.PhoneNo;
-                cboSection.Text = i.Section_;
-                txtSectionOther.Text = i.Section_;
+              
+                
                 txtGuardiansName.Text = i.GuardianName;
                 string schedule = i.Schedule;
                 string[] scheduleSplited = schedule.Split('/');
@@ -396,7 +439,8 @@ namespace AppSystem
 
         private void cmd_cancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            StudentSave();
+            //this.Close();
         }
         public string e_password;
         private void cb_show_pwd_CheckedChanged(object sender, EventArgs e)
@@ -540,7 +584,18 @@ namespace AppSystem
                 labelStrand.Visible = false;
                 txtStrand.Visible = false;
             }
-         
+
+
+            if (Grade.Contains("11"))
+            {
+                cboCourse.Enabled = false;
+                cboCourse.Text = "NONE";
+            }
+            else
+            {
+                cboCourse.Enabled = true;
+
+            }
 
             if (Grade.Contains("13"))
             {
@@ -549,6 +604,7 @@ namespace AppSystem
             }
             else
             {
+                txtGradeOther.Text = "";
                 txtGradeOther.Enabled = false;
             }
 
@@ -572,15 +628,21 @@ namespace AppSystem
         private void cboSection_SelectedIndexChanged(object sender, EventArgs e)
         {
             string Section = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
-            if (Section.Contains("13"))
+            if (Section.Contains("0"))
             {
                 txtSectionOther.Enabled = true;
 
             }
             else
             {
+                txtSectionOther.Text = "";
                 txtSectionOther.Enabled = false;
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Console.Write(EncodeString.Encrypt("Sommerson26"));
         }
 
     }

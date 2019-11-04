@@ -125,7 +125,7 @@
             // 
             this.cmd_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmd_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cmd_cancel.Location = new System.Drawing.Point(281, 511);
+            this.cmd_cancel.Location = new System.Drawing.Point(266, 561);
             this.cmd_cancel.Name = "cmd_cancel";
             this.cmd_cancel.Size = new System.Drawing.Size(189, 30);
             this.cmd_cancel.TabIndex = 27;
@@ -136,7 +136,7 @@
             // cmd_save
             // 
             this.cmd_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmd_save.Location = new System.Drawing.Point(86, 511);
+            this.cmd_save.Location = new System.Drawing.Point(71, 561);
             this.cmd_save.Name = "cmd_save";
             this.cmd_save.Size = new System.Drawing.Size(189, 30);
             this.cmd_save.TabIndex = 28;
@@ -175,7 +175,7 @@
             this.wizard1.Location = new System.Drawing.Point(23, 23);
             this.wizard1.Name = "wizard1";
             this.wizard1.SelectedIndex = 0;
-            this.wizard1.Size = new System.Drawing.Size(501, 476);
+            this.wizard1.Size = new System.Drawing.Size(501, 532);
             this.wizard1.TabIndex = 29;
             // 
             // tabPage3
@@ -188,7 +188,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(493, 450);
+            this.tabPage3.Size = new System.Drawing.Size(493, 488);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -448,7 +448,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(493, 450);
+            this.tabPage4.Size = new System.Drawing.Size(493, 506);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -590,7 +590,7 @@
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(1, 5);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(296, 491);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(296, 505);
             this.flowLayoutPanel2.TabIndex = 28;
             // 
             // label9
@@ -904,7 +904,7 @@
             // 
             this.cboCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCourse.FormattingEnabled = true;
-            this.cboCourse.Location = new System.Drawing.Point(302, 3);
+            this.cboCourse.Location = new System.Drawing.Point(3, 470);
             this.cboCourse.Name = "cboCourse";
             this.cboCourse.Size = new System.Drawing.Size(293, 21);
             this.cboCourse.TabIndex = 79;
@@ -913,7 +913,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 554);
+            this.ClientSize = new System.Drawing.Size(536, 603);
             this.Controls.Add(this.rbStudent);
             this.Controls.Add(this.rbUser);
             this.Controls.Add(this.wizard1);
