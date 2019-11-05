@@ -181,13 +181,6 @@ namespace AppSystem
 			return ((ISingleResult<getRequestResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_AccountSELECT")]
-		public ISingleResult<sp_AccountSELECTResult> sp_AccountSELECT([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="VarChar(MAX)")] string iD)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
-			return ((ISingleResult<sp_AccountSELECTResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.getAdviser")]
 		public ISingleResult<getAdviserResult> getAdviser()
 		{
@@ -297,6 +290,13 @@ namespace AppSystem
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), recID);
 			return ((ISingleResult<AccountSelectByIDResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_AccountSELECT")]
+		public ISingleResult<sp_AccountSELECTResult> sp_AccountSELECT([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="VarChar(MAX)")] string iD)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
+			return ((ISingleResult<sp_AccountSELECTResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -1348,212 +1348,6 @@ namespace AppSystem
 		}
 	}
 	
-	public partial class sp_AccountSELECTResult
-	{
-		
-		private int _cn;
-		
-		private string _fullname;
-		
-		private string _Username;
-		
-		private System.Nullable<int> _Level_cn;
-		
-		private string _Rank;
-		
-		private string _Status;
-		
-		private string _Remarks;
-		
-		private string _Grade;
-		
-		private string _Section;
-		
-		private string _Schedule;
-		
-		private string _Adviser;
-		
-		public sp_AccountSELECTResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn", DbType="Int NOT NULL")]
-		public int cn
-		{
-			get
-			{
-				return this._cn;
-			}
-			set
-			{
-				if ((this._cn != value))
-				{
-					this._cn = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fullname", DbType="VarChar(764) NOT NULL", CanBeNull=false)]
-		public string fullname
-		{
-			get
-			{
-				return this._fullname;
-			}
-			set
-			{
-				if ((this._fullname != value))
-				{
-					this._fullname = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Username", DbType="VarChar(254)")]
-		public string Username
-		{
-			get
-			{
-				return this._Username;
-			}
-			set
-			{
-				if ((this._Username != value))
-				{
-					this._Username = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Level_cn", DbType="Int")]
-		public System.Nullable<int> Level_cn
-		{
-			get
-			{
-				return this._Level_cn;
-			}
-			set
-			{
-				if ((this._Level_cn != value))
-				{
-					this._Level_cn = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rank", DbType="VarChar(254)")]
-		public string Rank
-		{
-			get
-			{
-				return this._Rank;
-			}
-			set
-			{
-				if ((this._Rank != value))
-				{
-					this._Rank = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(20)")]
-		public string Status
-		{
-			get
-			{
-				return this._Status;
-			}
-			set
-			{
-				if ((this._Status != value))
-				{
-					this._Status = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remarks", DbType="VarChar(20)")]
-		public string Remarks
-		{
-			get
-			{
-				return this._Remarks;
-			}
-			set
-			{
-				if ((this._Remarks != value))
-				{
-					this._Remarks = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Grade", DbType="VarChar(100)")]
-		public string Grade
-		{
-			get
-			{
-				return this._Grade;
-			}
-			set
-			{
-				if ((this._Grade != value))
-				{
-					this._Grade = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Section", DbType="VarChar(100)")]
-		public string Section
-		{
-			get
-			{
-				return this._Section;
-			}
-			set
-			{
-				if ((this._Section != value))
-				{
-					this._Section = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Schedule", DbType="VarChar(100)")]
-		public string Schedule
-		{
-			get
-			{
-				return this._Schedule;
-			}
-			set
-			{
-				if ((this._Schedule != value))
-				{
-					this._Schedule = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Adviser", DbType="VarChar(100)")]
-		public string Adviser
-		{
-			get
-			{
-				return this._Adviser;
-			}
-			set
-			{
-				if ((this._Adviser != value))
-				{
-					this._Adviser = value;
-				}
-			}
-		}
-	}
-	
 	public partial class getAdviserResult
 	{
 		
@@ -2505,6 +2299,248 @@ namespace AppSystem
 				if ((this._CourseName != value))
 				{
 					this._CourseName = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_AccountSELECTResult
+	{
+		
+		private int _cn;
+		
+		private string _fullname;
+		
+		private string _Username;
+		
+		private System.Nullable<int> _Level_cn;
+		
+		private string _Rank;
+		
+		private string _Status;
+		
+		private string _Remarks;
+		
+		private string _Grade;
+		
+		private string _Section;
+		
+		private string _Schedule;
+		
+		private string _Adviser;
+		
+		private string _GradeOther;
+		
+		private string _SectionOther;
+		
+		public sp_AccountSELECTResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn", DbType="Int NOT NULL")]
+		public int cn
+		{
+			get
+			{
+				return this._cn;
+			}
+			set
+			{
+				if ((this._cn != value))
+				{
+					this._cn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fullname", DbType="VarChar(764) NOT NULL", CanBeNull=false)]
+		public string fullname
+		{
+			get
+			{
+				return this._fullname;
+			}
+			set
+			{
+				if ((this._fullname != value))
+				{
+					this._fullname = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Username", DbType="VarChar(254)")]
+		public string Username
+		{
+			get
+			{
+				return this._Username;
+			}
+			set
+			{
+				if ((this._Username != value))
+				{
+					this._Username = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Level_cn", DbType="Int")]
+		public System.Nullable<int> Level_cn
+		{
+			get
+			{
+				return this._Level_cn;
+			}
+			set
+			{
+				if ((this._Level_cn != value))
+				{
+					this._Level_cn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rank", DbType="VarChar(254)")]
+		public string Rank
+		{
+			get
+			{
+				return this._Rank;
+			}
+			set
+			{
+				if ((this._Rank != value))
+				{
+					this._Rank = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(20)")]
+		public string Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this._Status = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remarks", DbType="VarChar(20)")]
+		public string Remarks
+		{
+			get
+			{
+				return this._Remarks;
+			}
+			set
+			{
+				if ((this._Remarks != value))
+				{
+					this._Remarks = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Grade", DbType="VarChar(100)")]
+		public string Grade
+		{
+			get
+			{
+				return this._Grade;
+			}
+			set
+			{
+				if ((this._Grade != value))
+				{
+					this._Grade = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Section", DbType="VarChar(100)")]
+		public string Section
+		{
+			get
+			{
+				return this._Section;
+			}
+			set
+			{
+				if ((this._Section != value))
+				{
+					this._Section = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Schedule", DbType="VarChar(100)")]
+		public string Schedule
+		{
+			get
+			{
+				return this._Schedule;
+			}
+			set
+			{
+				if ((this._Schedule != value))
+				{
+					this._Schedule = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Adviser", DbType="VarChar(100)")]
+		public string Adviser
+		{
+			get
+			{
+				return this._Adviser;
+			}
+			set
+			{
+				if ((this._Adviser != value))
+				{
+					this._Adviser = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeOther", DbType="VarChar(100)")]
+		public string GradeOther
+		{
+			get
+			{
+				return this._GradeOther;
+			}
+			set
+			{
+				if ((this._GradeOther != value))
+				{
+					this._GradeOther = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SectionOther", DbType="VarChar(100)")]
+		public string SectionOther
+		{
+			get
+			{
+				return this._SectionOther;
+			}
+			set
+			{
+				if ((this._SectionOther != value))
+				{
+					this._SectionOther = value;
 				}
 			}
 		}

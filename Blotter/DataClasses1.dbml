@@ -133,22 +133,6 @@
       <Column Name="Note" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.sp_AccountSELECT" Method="sp_AccountSELECT">
-    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
-    <ElementType Name="sp_AccountSELECTResult">
-      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="fullname" Type="System.String" DbType="VarChar(764) NOT NULL" CanBeNull="false" />
-      <Column Name="Username" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="Level_cn" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Rank" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="Status" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Remarks" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Grade" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Section" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Schedule" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Adviser" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.getAdviser" Method="getAdviser">
     <ElementType Name="getAdviserResult">
       <Column Name="Adviser" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -287,6 +271,24 @@
       <Column Name="GradeName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Section_" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="CourseName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_AccountSELECT" Method="sp_AccountSELECT">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_AccountSELECTResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fullname" Type="System.String" DbType="VarChar(764) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Level_cn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Rank" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Grade" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Section" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Schedule" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Adviser" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="GradeOther" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SectionOther" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

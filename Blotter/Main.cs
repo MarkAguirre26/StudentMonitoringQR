@@ -144,7 +144,18 @@ namespace AppSystem
             dg_user.Rows.Clear();
             foreach (var i in list)
             {
-                dg_user.Rows.Add(i.cn, i.fullname,i.Adviser,i.Grade,i.Section, i.Username, i.Rank, i.Level_cn,i.Schedule);
+                string g = i.Grade;
+                if (g.Equals("OTHER"))
+                {
+                    g = i.GradeOther;
+                }
+                string s = i.Section;
+                if (s.Equals("OTHER"))
+                {
+                    g = i.SectionOther;
+                }
+
+                dg_user.Rows.Add(i.cn, i.fullname,i.Adviser,g,s, i.Username, i.Rank, i.Level_cn,i.Schedule);
             }
             items.Text = "Items: " + dg_user.Rows.Count.ToString();
 
