@@ -70,9 +70,7 @@ namespace AppSystem
                 cboCourse.Items.Add(new ComboBoxItem(i.Description, i.RecID.ToString()));
 
             }
-
-
-         
+                    
 
 
 
@@ -192,23 +190,25 @@ namespace AppSystem
             if (!Grade.Contains("13"))
             {
                 txtGradeOther.Text  = "";
-                string[] g = Grade.Split('/');
-                Grade = g[0];
+              
 
 
             }
-          
-            
+
+            string[] g = Grade.Split('/');
+            Grade = g[0];
+
+
             if (!Section.Contains("0"))
             {
                txtSectionOther.Text = "";
-               string[] s = Section.Split('/');
-               Section = s[0];
+             
 
             }
-            
 
-           
+
+            string[] s = Section.Split('/');
+            Section = s[0];
 
 
             
