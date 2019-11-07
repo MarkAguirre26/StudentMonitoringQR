@@ -152,7 +152,7 @@ namespace AppSystem
                 string s = i.Section;
                 if (s.Equals("OTHER"))
                 {
-                    g = i.SectionOther;
+                    s = i.SectionOther;
                 }
 
                 dg_user.Rows.Add(i.cn, i.fullname,i.Adviser,g,s, i.Username, i.Rank, i.Level_cn,i.Schedule);
@@ -482,12 +482,24 @@ namespace AppSystem
         {
             string grade = ((cboGrade.SelectedItem as ComboBoxItem).Value.ToString());
             string section = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
+
+           
+
             string gradeText = cboGrade.SelectedItem.ToString();
             string sectionText = cboSection.SelectedItem.ToString();
             string adviser = cboAdviser.Text;
             string rDate = txtDate.Text;
 
-      
+            if (gradeText.Contains("OTHER"))
+            {
+                gradeText = txtGradeOther.Text;
+            }
+
+            if (sectionText.Contains("OTHER"))
+            {
+                sectionText = txtSectionOther.Text;
+            }
+
 
             DataClasses1DataContext db = new DataClasses1DataContext(Tool.ConnectionString);
             DataTable dt = new DataSet1.getReportDataTable();
@@ -529,6 +541,32 @@ namespace AppSystem
         private void pb3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cboGrade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboGrade_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtGradeOther.Visible = false;
+            string grade = ((cboGrade.SelectedItem as ComboBoxItem).Value.ToString());
+            if (grade.Contains("OTHER"))
+            {
+                txtGradeOther.Visible = true;
+            }
+            
+        }
+
+        private void cboSection_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtSectionOther.Visible = false;
+            string secion = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
+            if (secion.Contains("OTHER"))
+            {
+                txtSectionOther.Visible = true;
+            }
         }
     }
 }

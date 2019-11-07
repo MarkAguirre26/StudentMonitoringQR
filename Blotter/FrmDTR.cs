@@ -188,10 +188,15 @@ namespace AppSystem
                 var i = db.AccountSelectByRFID(qrCode).FirstOrDefault();
                 this.Tag = i.cn;
 
+                string gs = i.GradeSection_;
+                if (gs.Contains("OTHER"))
+                {
+                    gs = i.GradeSectionOther;
+                }
                 pb.Image = Tool.bytetoimage(i.AVATAR.ToArray());
                 lblName.Text = i.AccountName;
                 lblLrn.Text = i.LRN;
-                lblGradeSection.Text = i.GradeSection_;
+                lblGradeSection.Text = gs;
                 PhoneNo = i.PhoneNo;
                 lblUseFingerprint.Visible = true;
                 lblUseFingerprint.Text = "Scan Fingerprint to confirm.";

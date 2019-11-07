@@ -208,14 +208,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSystem.exe" size="1513984">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppSystem.exe" size="1515008">
       <assemblyIdentity name="AppSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6EUOePQ+Gb5CSrlq3Adc2r+d7CdIXyFXzfmwlEtxrR4=</dsig:DigestValue>
+        <dsig:DigestValue>Nfzit4g+Svb0UmAKOBkUmfl51CIshthGXyA/fMLPvq4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

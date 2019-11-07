@@ -84,17 +84,6 @@
       <Column Name="PhoneNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.AccountSelectByRFID" Method="AccountSelectByRFID">
-    <Parameter Name="RFID" Parameter="rFID" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="AccountSelectByRFIDResult">
-      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="AVATAR" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" />
-      <Column Name="AccountName" Type="System.String" DbType="VarChar(765)" CanBeNull="true" />
-      <Column Name="LRN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="GradeSection_" Type="System.String" DbType="VarChar(201)" CanBeNull="true" />
-      <Column Name="PhoneNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.CheckDTRifLOGGED" Method="CheckDTRifLOGGED">
     <Parameter Name="RecID" Parameter="recID" Type="System.String" DbType="VarChar(20)" />
     <ElementType Name="CheckDTRifLOGGEDResult">
@@ -289,6 +278,18 @@
       <Column Name="Adviser" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="GradeOther" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="SectionOther" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.AccountSelectByRFID" Method="AccountSelectByRFID">
+    <Parameter Name="RFID" Parameter="rFID" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="AccountSelectByRFIDResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AVATAR" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="VarChar(765)" CanBeNull="true" />
+      <Column Name="LRN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="GradeSection_" Type="System.String" DbType="VarChar(201)" CanBeNull="true" />
+      <Column Name="GradeSectionOther" Type="System.String" DbType="VarChar(201)" CanBeNull="true" />
+      <Column Name="PhoneNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

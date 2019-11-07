@@ -139,13 +139,6 @@ namespace AppSystem
 			return ((ISingleResult<AccountSelectByBIOMETRICSResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AccountSelectByRFID")]
-		public ISingleResult<AccountSelectByRFIDResult> AccountSelectByRFID([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RFID", DbType="VarChar(50)")] string rFID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), rFID);
-			return ((ISingleResult<AccountSelectByRFIDResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CheckDTRifLOGGED")]
 		public ISingleResult<CheckDTRifLOGGEDResult> CheckDTRifLOGGED([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RecID", DbType="VarChar(20)")] string recID)
 		{
@@ -297,6 +290,13 @@ namespace AppSystem
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
 			return ((ISingleResult<sp_AccountSELECTResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AccountSelectByRFID")]
+		public ISingleResult<AccountSelectByRFIDResult> AccountSelectByRFID([global::System.Data.Linq.Mapping.ParameterAttribute(Name="RFID", DbType="VarChar(50)")] string rFID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), rFID);
+			return ((ISingleResult<AccountSelectByRFIDResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -830,122 +830,6 @@ namespace AppSystem
 		private string _PhoneNo;
 		
 		public AccountSelectByBIOMETRICSResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn", DbType="Int NOT NULL")]
-		public int cn
-		{
-			get
-			{
-				return this._cn;
-			}
-			set
-			{
-				if ((this._cn != value))
-				{
-					this._cn = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AVATAR", DbType="VarBinary(MAX)")]
-		public System.Data.Linq.Binary AVATAR
-		{
-			get
-			{
-				return this._AVATAR;
-			}
-			set
-			{
-				if ((this._AVATAR != value))
-				{
-					this._AVATAR = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountName", DbType="VarChar(765)")]
-		public string AccountName
-		{
-			get
-			{
-				return this._AccountName;
-			}
-			set
-			{
-				if ((this._AccountName != value))
-				{
-					this._AccountName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LRN", DbType="VarChar(20)")]
-		public string LRN
-		{
-			get
-			{
-				return this._LRN;
-			}
-			set
-			{
-				if ((this._LRN != value))
-				{
-					this._LRN = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeSection_", DbType="VarChar(201)")]
-		public string GradeSection_
-		{
-			get
-			{
-				return this._GradeSection_;
-			}
-			set
-			{
-				if ((this._GradeSection_ != value))
-				{
-					this._GradeSection_ = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhoneNo", DbType="VarChar(50)")]
-		public string PhoneNo
-		{
-			get
-			{
-				return this._PhoneNo;
-			}
-			set
-			{
-				if ((this._PhoneNo != value))
-				{
-					this._PhoneNo = value;
-				}
-			}
-		}
-	}
-	
-	public partial class AccountSelectByRFIDResult
-	{
-		
-		private int _cn;
-		
-		private System.Data.Linq.Binary _AVATAR;
-		
-		private string _AccountName;
-		
-		private string _LRN;
-		
-		private string _GradeSection_;
-		
-		private string _PhoneNo;
-		
-		public AccountSelectByRFIDResult()
 		{
 		}
 		
@@ -2541,6 +2425,140 @@ namespace AppSystem
 				if ((this._SectionOther != value))
 				{
 					this._SectionOther = value;
+				}
+			}
+		}
+	}
+	
+	public partial class AccountSelectByRFIDResult
+	{
+		
+		private int _cn;
+		
+		private System.Data.Linq.Binary _AVATAR;
+		
+		private string _AccountName;
+		
+		private string _LRN;
+		
+		private string _GradeSection_;
+		
+		private string _GradeSectionOther;
+		
+		private string _PhoneNo;
+		
+		public AccountSelectByRFIDResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn", DbType="Int NOT NULL")]
+		public int cn
+		{
+			get
+			{
+				return this._cn;
+			}
+			set
+			{
+				if ((this._cn != value))
+				{
+					this._cn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AVATAR", DbType="VarBinary(MAX)")]
+		public System.Data.Linq.Binary AVATAR
+		{
+			get
+			{
+				return this._AVATAR;
+			}
+			set
+			{
+				if ((this._AVATAR != value))
+				{
+					this._AVATAR = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountName", DbType="VarChar(765)")]
+		public string AccountName
+		{
+			get
+			{
+				return this._AccountName;
+			}
+			set
+			{
+				if ((this._AccountName != value))
+				{
+					this._AccountName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LRN", DbType="VarChar(20)")]
+		public string LRN
+		{
+			get
+			{
+				return this._LRN;
+			}
+			set
+			{
+				if ((this._LRN != value))
+				{
+					this._LRN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeSection_", DbType="VarChar(201)")]
+		public string GradeSection_
+		{
+			get
+			{
+				return this._GradeSection_;
+			}
+			set
+			{
+				if ((this._GradeSection_ != value))
+				{
+					this._GradeSection_ = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeSectionOther", DbType="VarChar(201)")]
+		public string GradeSectionOther
+		{
+			get
+			{
+				return this._GradeSectionOther;
+			}
+			set
+			{
+				if ((this._GradeSectionOther != value))
+				{
+					this._GradeSectionOther = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhoneNo", DbType="VarChar(50)")]
+		public string PhoneNo
+		{
+			get
+			{
+				return this._PhoneNo;
+			}
+			set
+			{
+				if ((this._PhoneNo != value))
+				{
+					this._PhoneNo = value;
 				}
 			}
 		}

@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -123,6 +123,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
@@ -137,14 +145,8 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.Viewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.txtGradeOther = new System.Windows.Forms.ToolStripTextBox();
+            this.txtSectionOther = new System.Windows.Forms.ToolStripTextBox();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
@@ -167,12 +169,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg_logs)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
             this.tabPage9.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.toolStrip2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -482,7 +484,7 @@
             this.toolStripButton2.Image = global::AppSystem.Properties.Resources.upload;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(79, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(80, 22);
             this.toolStripButton2.Text = "Open DTR";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -552,8 +554,8 @@
             this.dg_DTR.AllowUserToDeleteRows = false;
             this.dg_DTR.AllowUserToResizeColumns = false;
             this.dg_DTR.AllowUserToResizeRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dg_DTR.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dg_DTR.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dg_DTR.BackgroundColor = System.Drawing.Color.White;
             this.dg_DTR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_DTR.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -692,8 +694,8 @@
             this.dg_user.AllowUserToDeleteRows = false;
             this.dg_user.AllowUserToResizeColumns = false;
             this.dg_user.AllowUserToResizeRows = false;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dg_user.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dg_user.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dg_user.BackgroundColor = System.Drawing.Color.White;
             this.dg_user.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_user.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -942,8 +944,8 @@
             this.dg_logs.AllowUserToDeleteRows = false;
             this.dg_logs.AllowUserToResizeColumns = false;
             this.dg_logs.AllowUserToResizeRows = false;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dg_logs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dg_logs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dg_logs.BackgroundColor = System.Drawing.Color.White;
             this.dg_logs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_logs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -1151,6 +1153,91 @@
             this.label14.TabIndex = 1;
             this.label14.Text = "______________________________________________________";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.pictureBox3);
+            this.tabPage3.Controls.Add(this.label18);
+            this.tabPage3.Controls.Add(this.label17);
+            this.tabPage3.Controls.Add(this.label2);
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.pictureBox2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1027, 439);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "Case of Emergency";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Silver;
+            this.pictureBox3.Location = new System.Drawing.Point(741, 45);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(266, 219);
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(502, 222);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(104, 16);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "Contact Number";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(502, 182);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(103, 16);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "Guardian Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(502, 145);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Adviser";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(502, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Student Number / LRN ";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(40, 279);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(266, 49);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Scan";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Silver;
+            this.pictureBox2.Location = new System.Drawing.Point(40, 45);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(266, 219);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel2);
@@ -1187,8 +1274,10 @@
             this.cboAdviser,
             this.toolStripButton4,
             this.cboGrade,
+            this.txtGradeOther,
             this.toolStripButton7,
             this.cboSection,
+            this.txtSectionOther,
             this.toolStripButton6,
             this.toolStripButton5});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
@@ -1244,6 +1333,8 @@
             this.cboGrade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboGrade.Name = "cboGrade";
             this.cboGrade.Size = new System.Drawing.Size(121, 25);
+            this.cboGrade.SelectedIndexChanged += new System.EventHandler(this.cboGrade_SelectedIndexChanged);
+            this.cboGrade.Click += new System.EventHandler(this.cboGrade_Click);
             // 
             // toolStripButton7
             // 
@@ -1260,6 +1351,7 @@
             this.cboSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSection.Name = "cboSection";
             this.cboSection.Size = new System.Drawing.Size(121, 25);
+            this.cboSection.SelectedIndexChanged += new System.EventHandler(this.cboSection_SelectedIndexChanged);
             // 
             // toolStripButton6
             // 
@@ -1291,90 +1383,17 @@
             this.Viewer1.TabIndex = 3;
             this.Viewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // tabPage3
+            // txtGradeOther
             // 
-            this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.pictureBox2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1027, 439);
-            this.tabPage3.TabIndex = 3;
-            this.tabPage3.Text = "Case of Emergency";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.txtGradeOther.Name = "txtGradeOther";
+            this.txtGradeOther.Size = new System.Drawing.Size(100, 25);
+            this.txtGradeOther.Visible = false;
             // 
-            // pictureBox2
+            // txtSectionOther
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 45);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(266, 219);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(40, 279);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(266, 49);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Scan";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(502, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Student Number / LRN ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(502, 145);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Adviser";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(502, 182);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(103, 16);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "Guardian Name";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(502, 222);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(104, 16);
-            this.label18.TabIndex = 5;
-            this.label18.Text = "Contact Number";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox3.Location = new System.Drawing.Point(741, 45);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(266, 219);
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
+            this.txtSectionOther.Name = "txtSectionOther";
+            this.txtSectionOther.Size = new System.Drawing.Size(100, 25);
+            this.txtSectionOther.Visible = false;
             // 
             // Main
             // 
@@ -1417,15 +1436,15 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1544,6 +1563,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ToolStripTextBox txtGradeOther;
+        private System.Windows.Forms.ToolStripTextBox txtSectionOther;
 
     }
 }
