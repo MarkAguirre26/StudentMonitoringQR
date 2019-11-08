@@ -111,7 +111,7 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(207, 23);
             this.txt_password.TabIndex = 24;
-            this.txt_password.Text = "Sommerson26";
+            this.txt_password.Text = "sommerson26";
             this.txt_password.UseSystemPasswordChar = true;
             // 
             // txt_username

@@ -439,8 +439,8 @@ namespace AppSystem
 
         private void cmd_cancel_Click(object sender, EventArgs e)
         {
-            StudentSave();
-            //this.Close();
+            //StudentSave();
+            this.Close();
         }
         public string e_password;
         private void cb_show_pwd_CheckedChanged(object sender, EventArgs e)

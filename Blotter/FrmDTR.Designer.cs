@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -128,7 +128,6 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
@@ -271,8 +270,8 @@
             this.dg_DTR.AllowUserToDeleteRows = false;
             this.dg_DTR.AllowUserToResizeColumns = false;
             this.dg_DTR.AllowUserToResizeRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dg_DTR.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dg_DTR.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dg_DTR.BackgroundColor = System.Drawing.Color.White;
             this.dg_DTR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_DTR.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;

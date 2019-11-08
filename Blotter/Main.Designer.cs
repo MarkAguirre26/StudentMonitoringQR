@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -140,13 +140,13 @@
             this.cboAdviser = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.cboGrade = new System.Windows.Forms.ToolStripComboBox();
+            this.txtGradeOther = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.cboSection = new System.Windows.Forms.ToolStripComboBox();
+            this.txtSectionOther = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.Viewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.txtGradeOther = new System.Windows.Forms.ToolStripTextBox();
-            this.txtSectionOther = new System.Windows.Forms.ToolStripTextBox();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
@@ -554,8 +554,8 @@
             this.dg_DTR.AllowUserToDeleteRows = false;
             this.dg_DTR.AllowUserToResizeColumns = false;
             this.dg_DTR.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dg_DTR.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dg_DTR.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dg_DTR.BackgroundColor = System.Drawing.Color.White;
             this.dg_DTR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_DTR.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -694,8 +694,8 @@
             this.dg_user.AllowUserToDeleteRows = false;
             this.dg_user.AllowUserToResizeColumns = false;
             this.dg_user.AllowUserToResizeRows = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dg_user.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dg_user.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dg_user.BackgroundColor = System.Drawing.Color.White;
             this.dg_user.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_user.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -944,8 +944,8 @@
             this.dg_logs.AllowUserToDeleteRows = false;
             this.dg_logs.AllowUserToResizeColumns = false;
             this.dg_logs.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dg_logs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dg_logs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dg_logs.BackgroundColor = System.Drawing.Color.White;
             this.dg_logs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dg_logs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -1336,6 +1336,12 @@
             this.cboGrade.SelectedIndexChanged += new System.EventHandler(this.cboGrade_SelectedIndexChanged);
             this.cboGrade.Click += new System.EventHandler(this.cboGrade_Click);
             // 
+            // txtGradeOther
+            // 
+            this.txtGradeOther.Name = "txtGradeOther";
+            this.txtGradeOther.Size = new System.Drawing.Size(100, 25);
+            this.txtGradeOther.Visible = false;
+            // 
             // toolStripButton7
             // 
             this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -1352,6 +1358,12 @@
             this.cboSection.Name = "cboSection";
             this.cboSection.Size = new System.Drawing.Size(121, 25);
             this.cboSection.SelectedIndexChanged += new System.EventHandler(this.cboSection_SelectedIndexChanged);
+            // 
+            // txtSectionOther
+            // 
+            this.txtSectionOther.Name = "txtSectionOther";
+            this.txtSectionOther.Size = new System.Drawing.Size(100, 25);
+            this.txtSectionOther.Visible = false;
             // 
             // toolStripButton6
             // 
@@ -1382,18 +1394,6 @@
             this.Viewer1.Size = new System.Drawing.Size(1029, 434);
             this.Viewer1.TabIndex = 3;
             this.Viewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            // 
-            // txtGradeOther
-            // 
-            this.txtGradeOther.Name = "txtGradeOther";
-            this.txtGradeOther.Size = new System.Drawing.Size(100, 25);
-            this.txtGradeOther.Visible = false;
-            // 
-            // txtSectionOther
-            // 
-            this.txtSectionOther.Name = "txtSectionOther";
-            this.txtSectionOther.Size = new System.Drawing.Size(100, 25);
-            this.txtSectionOther.Visible = false;
             // 
             // Main
             // 

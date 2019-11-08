@@ -145,22 +145,40 @@ namespace AppSystem
             foreach (var i in list)
             {
                 string g = i.Grade;
-                if (g.Equals("OTHER"))
+
+                if (g != null)
                 {
-                    g = i.GradeOther;
+                    if (g.Equals("OTHER"))
+                    {
+                        g = i.GradeOther;
+                    }
                 }
-                string s = i.Section;
-                if (s.Equals("OTHER"))
+                else
                 {
-                    s = i.SectionOther;
+                    g = "";
                 }
 
-                dg_user.Rows.Add(i.cn, i.fullname,i.Adviser,g,s, i.Username, i.Rank, i.Level_cn,i.Schedule);
+
+                string s = i.Section;
+                if (s != null)
+                {
+                    if (s.Equals("OTHER"))
+                    {
+                        s = i.SectionOther;
+                    }
+                }
+                else
+                {
+                    s = "";
+                }
+               
+
+                dg_user.Rows.Add(i.cn, i.fullname, i.Adviser, g, s, i.Username, i.Rank, i.Level_cn, i.Schedule);
             }
             items.Text = "Items: " + dg_user.Rows.Count.ToString();
 
         }
-        
+
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
@@ -357,7 +375,7 @@ namespace AppSystem
         {
             //this.Invoke(new MethodInvoker(delegate { DailyTimeRecordSELECT(); }));
         }
-      
+
         public void DailyTimeRecordSELECT(string keyword = "")
         {
             List<dtr> dtrList = new List<dtr>();
@@ -369,22 +387,22 @@ namespace AppSystem
                 list = (from m in list where m.AccountName.ToLower().Contains(keyword.ToLower()) select m).ToList();
             }
 
-            
+
             foreach (var i in list)
             {
-               // dg_DTR.Rows.Add(i.RecID, i.AccountName, i.TimeIN, i.TimeOUT, (i.Total / 60), Convert.ToDateTime(i.DateCreated).ToShortDateString());
+                // dg_DTR.Rows.Add(i.RecID, i.AccountName, i.TimeIN, i.TimeOUT, (i.Total / 60), Convert.ToDateTime(i.DateCreated).ToShortDateString());
                 //if (!dtrList.Any(t => t.AccountName == i.AccountName))
                 //{
-                    dtrList.Add(new dtr
-                    {
-                        RecID = i.RecID,
-                        AccountName = i.AccountName,
-                        TimeIN = i.TimeIN,
-                        TimeOUT = i.TimeOUT,
-                        Total = i.Total.ToString(),
-                        RowRemark = i.RowRemark,
-                        DateCreated = i.DateCreated
-                    });
+                dtrList.Add(new dtr
+                {
+                    RecID = i.RecID,
+                    AccountName = i.AccountName,
+                    TimeIN = i.TimeIN,
+                    TimeOUT = i.TimeOUT,
+                    Total = i.Total.ToString(),
+                    RowRemark = i.RowRemark,
+                    DateCreated = i.DateCreated
+                });
                 //}
             }
             dg_DTR.Refresh();
@@ -416,7 +434,7 @@ namespace AppSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void toolStripButton3_Click_1(object sender, EventArgs e)
@@ -483,7 +501,7 @@ namespace AppSystem
             string grade = ((cboGrade.SelectedItem as ComboBoxItem).Value.ToString());
             string section = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
 
-           
+
 
             string gradeText = cboGrade.SelectedItem.ToString();
             string sectionText = cboSection.SelectedItem.ToString();
@@ -551,18 +569,18 @@ namespace AppSystem
         private void cboGrade_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtGradeOther.Visible = false;
-            string grade = ((cboGrade.SelectedItem as ComboBoxItem).Value.ToString());
+            string grade = cboGrade.SelectedItem.ToString();
             if (grade.Contains("OTHER"))
             {
                 txtGradeOther.Visible = true;
             }
-            
+
         }
 
         private void cboSection_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtSectionOther.Visible = false;
-            string secion = ((cboSection.SelectedItem as ComboBoxItem).Value.ToString());
+            string secion = cboSection.SelectedItem.ToString();
             if (secion.Contains("OTHER"))
             {
                 txtSectionOther.Visible = true;

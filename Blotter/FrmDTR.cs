@@ -78,19 +78,7 @@ namespace AppSystem
                 int o = Convert.ToInt32(dt_TimeOut.ToString("HHmm"));
                 int current = Convert.ToInt32(DateTime.Now.ToString("HHmm"));
 
-                //if (identifier.Contains("AM"))
-                //{
-
-                //if (current > t)
-                //{
-                //    remark = "Late";
-                //}
-
-                //db.DtrINSERT(this.Tag.ToString(), remark);
-
-                //}
-                //else
-                //{
+            
 
                 if (c.c <= 0)
                 {
@@ -142,7 +130,7 @@ namespace AppSystem
 
                                 new Messaging().sendSms(PhoneNo.Replace("-", ""), lblName.Text + " \n Time: " + DateTime.Now);
 
-                                lblUseFingerprint.Text = "Thank You! You May Now Enter...";
+                             
                                 this.Tag = null;
                             }
                         
@@ -280,7 +268,23 @@ namespace AppSystem
                     if (timeout == "12:00 AM")
                     {
                         timeout = "";
+                       
                     }
+
+                    if (timeout != "")
+                    {
+                     
+                        lblUseFingerprint.Visible = true;
+                        lblUseFingerprint.Text = "Thank You! You May Now go home.";
+                    }
+                    else
+                    {
+                        lblUseFingerprint.Visible = true;
+                        lblUseFingerprint.Text = "Thank You! You May Now enter.";
+                    }
+
+
+                 
 
                     if (!dtrList.Any(t => t.AccountName == i.AccountName))
                     {
@@ -289,7 +293,7 @@ namespace AppSystem
                             RecID = i.RecID,
                             AccountName = i.AccountName,
                             TimeIN = i.TimeIN,
-                            TimeOUT = i.TimeOUT,
+                            TimeOUT = timeout,
                             Total = i.Total.ToString(),
                             RowRemark = i.RowRemark,
                             DateCreated = i.DateCreated
@@ -452,7 +456,10 @@ namespace AppSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            dg_DTR.Refresh();
+            //dg_DTR.Refresh();
+            this.Tag = 13;
+            SaveDtr();
+            DailyTimeRecordSELECT();
         }
 
 
